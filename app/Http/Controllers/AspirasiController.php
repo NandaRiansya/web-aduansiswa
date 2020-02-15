@@ -24,7 +24,8 @@ class AspirasiController extends Controller
      */
     public function create()
     {
-        //
+        
+        return view('create.laporkan');
     }
 
     /**
@@ -35,7 +36,15 @@ class AspirasiController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'namalengkap' => 'required', 
+            'kelas' => 'required', 
+            'nomorhp' => 'required', 
+            'keluh' => 'required', 
+            'jeniskelamin' => 'required', 
+            'kategori' => 'required', 
+        ]);
+        return $request;
     }
 
     /**
@@ -46,7 +55,7 @@ class AspirasiController extends Controller
      */
     public function show(Aspirasi $aspirasi)
     {
-        //
+        
     }
 
     /**

@@ -16,6 +16,13 @@
 // });
 
 Route::get('/','AspirasiController@index');
+
+Route::get('/create/laporkan','AspirasiController@create');
+Route::get('/create','AspirasiController@store');
+route::post('/success','aspirasiController@store');
+
+route::get('/success','aspirasiController@show');
+
 // Route::get('/',function() {
 //     return view('index');
 // });

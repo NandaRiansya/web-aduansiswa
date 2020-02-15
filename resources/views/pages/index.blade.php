@@ -43,7 +43,7 @@
                 
                 <div class="btn">
                     <a href="" class="button text-decoration-none">Tentang Kami</a>
-                    <a href="" class="button text-decoration-none">Kirim Laporan</a>
+                    <a href="{{url('/create/laporkan')}}" class="button text-decoration-none">Laporkan Sekarang</a>
                     
                 </div>
             </div>
